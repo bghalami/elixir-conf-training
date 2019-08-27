@@ -12,7 +12,8 @@ defmodule Example2Web.FeedChannel do
 
     # TODO: This is not replying to the fetch command correctly, causing a crash. Return a successful
     # response so that the client is responded to with the payload above.
-    nil
+
+    {:reply, {:ok, payload}, socket}
   end
 
   # TODO: The function for create_activity is purposefully left out. Try implementing it to these specs:
